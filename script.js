@@ -18,7 +18,6 @@ menuBtn.addEventListener('click', () => {
   } else {
     menuBtn.classList.remove('open');
     menuBtn.style.marginRight = '36px';
-    menuOpen = false;
   }
 });
 
@@ -405,7 +404,7 @@ window.addEventListener('load', popupwindow);
 const form = document.getElementById('template-form');
 const email = document.getElementById('email');
 const emailLabel = document.getElementById('label-email');
-const underCase = /^[a-z0-9_.+-]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+const underCase = /^[a-z0-9_.+-]+@[a-z0-9-]+\.[a-z0-9-.]+$;
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -429,7 +428,7 @@ document.addEventListener('input', () => {
     email: email.value,
     textArea: textArea.value,
   };
-  localStorage.setItem('form', JSON.stringify(formInputs));
+  localStorage.setItem('form', formInputs);
 });
 
 function setValues() {
