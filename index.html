@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    </style>
+    <title>Rafael full-stack web developer</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <div class="mobile-header">
+          <a href="#">WELCOME</a>
+          <nav class="nav-bar-mobile">
+            <div class="line line-one"></div>
+            <div class="line line-two"></div>
+            <div class="line line-three"></div>
+          </nav>
+          <div id="mobile-links">
+            <ul>
+              <li><a href="#portafolio">Portafolio</a></li>
+              <li class="list-margin"><a href="#about">About</a></li>
+              <li class="list-margin"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="desktop-header">
+          <nav class="nav-bar-desktop">
+            <ul>
+              <li><a href="#">Portafolio</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="presentation">
+        <h1 class="introduction">Hey there. I’m Rafael</h1>
+        <h2 class="introduction-second-part">I’m a software developer</h2>
+        <p class="supporting-text">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+        <ul class="icon-social">
+          <li>
+            <img src="images/twitter.png" class="social" alt="twitter" />
+          </li>
+          <li>
+            <img src="images/Linkedin.png" class="social" alt="Linkedin" />
+          </li>
+          <li>
+            <img src="images/medium.png" class="social" alt="Medium" />
+          </li>
+          <li>
+            <img src="images/github.png" class="social" alt="Github" />
+          </li>
+          <li>
+            <img src="images/angellist.png" class="social" alt="angellist" />
+          </li>
+        </ul>
+        <div class="arrow-circle">
+          <img src="images/arrow.png" class="arrow" alt="" />
+        </div>
+      </section>
+
+      <section class="recent-projects" id="portafolio">
+        <div class="recent-work-title">
+          <h2>My Recent <br />Works</h2>
+          <div class="green-line"></div>
+        </div>
+        <div class="pop-up"></div>
+      </section>
+
+      <section class="about-template" id="about">
+        <div class="about-me">
+          <h2 class="about-title">About me</h2>
+          <p>
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+          <button class="btn" type="button">Get My Resume</button>
+        </div>
+        <div class="about-cards">
+          <div class="card-about card-about-one">
+            <img src="images/firts-icon-about-card.png" alt="" />
+            <h3>Languages</h3>
+            <div class="about-languages-tags">
+              <ul>
+                <li class="tag-element-about">JavaScript</li>
+                <li class="tag-element-about">Ruby</li>
+                <li class="tag-element-about">Html</li>
+                <li class="tag-element-about">CSS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-about card-about-two">
+            <img src="images/icon-framworks.png" alt="" />
+            <h3>Frameworks</h3>
+            <div class="about-other-tags">
+              <ul>
+                <li class="tag-element-about">Bootstrap</li>
+                <li class="tag-element-about">Ruby on rails</li>
+                <li class="tag-element-about">RSpec</li>
+                <li class="tag-element-about">Capybara</li>
+                <li class="tag-element-about">Selenium</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-about card-about-three">
+            <img src="images/Icons-skills.png" alt="" />
+            <h3>Skills</h3>
+            <div class="about-other-tags">
+              <ul>
+                <li class="tag-element-about">Codekit</li>
+                <li class="tag-element-about">GitHub</li>
+                <li class="tag-element-about">Codepen</li>
+                <li class="tag-element-about">Gitlab</li>
+                <li class="tag-element-about">Terminal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-contact" id="contact">
+        <p class="text-contact">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </p>
+        <form
+          id="template-form"
+          action="https://formspree.io/f/mbjwkvzr"
+          method="post"
+        >
+          <ul class="input-form">
+            <li>
+              <input
+                id="full-name"
+                type="text"
+                name="Full_Name"
+                placeholder="Full name"
+                maxlength="30"
+                required
+              />
+              <label for="full-name"></label>
+            </li>
+            <li>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email adress"
+                required
+              />
+              <label for="email" id="label-email"
+                >Please write the email in lowercase</label
+              >
+            </li>
+            <li>
+              <textarea
+                name="resume_text"
+                id="textarea"
+                cols="30"
+                rows="5"
+                placeholder="Enter text here"
+                maxlength="500"
+                required
+              ></textarea>
+              <label for="textarea"></label>
+            </li>
+            <li>
+              <button type="submit" class="contact-btn btn">
+                Get in touch
+              </button>
+            </li>
+          </ul>
+        </form>
+      </section>
+      <footer class="footer-page">
+        <ul class="icon-social" id="footer-icons">
+          <li>
+            <img src="images/twitter.png" class="social" alt="twitter" />
+          </li>
+
+          <li>
+            <img src="images/Linkedin.png" class="social" alt="Linkedin" />
+          </li>
+
+          <li>
+            <img src="images/medium.png" class="social" alt="Medium" />
+          </li>
+
+          <li>
+            <img src="images/github.png" class="social" alt="Github" />
+          </li>
+
+          <li>
+            <img src="images/angellist.png" class="social" alt="angellist" />
+          </li>
+        </ul>
+        <p>rega1237@gmail.com</p>
+        <div></div>
+      </footer>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
